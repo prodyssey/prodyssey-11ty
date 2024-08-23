@@ -1,0 +1,6 @@
+# Node modules and dependencies
+node_modules/
+npm-debug.log*
+
+# Production build files
+_site/

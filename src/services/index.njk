@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+title: Our Services
+---
+
+<section class="py-16 bg-circuit-pattern bg-opacity-5">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-serif font-bold text-primary mb-8 text-center">Our Services</h1>
+        <p class="text-xl mb-12 text-center">Comprehensive solutions to guide your B2B SaaS journey</p>
+        
+        {% for pillar in servicePillars %}
+        <div class="mb-16">
+            <h2 class="text-3xl font-serif font-bold text-secondary mb-6">{{ pillar.title }}</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {% for service in pillar.services %}
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-serif font-bold text-primary mb-4">{{ service.title }}</h3>
+                    <p class="mb-4">{{ service.description }}</p>
+                    <a href="/services/{{ service.slug }}" class="text-accent hover:underline">Learn More →</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

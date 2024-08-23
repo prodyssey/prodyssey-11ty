@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+title: Blog
+---
+
+<section class="py-16 bg-greek-pattern bg-opacity-5">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-serif font-bold text-primary mb-8 text-center">Prodyssey Insights</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {% for post in collections.posts | reverse %}
+                {% include "components/blog-post-card.njk" %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

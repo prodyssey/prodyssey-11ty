@@ -1,0 +1,27 @@
+{% set pageTitle = title + ' | Prodyssey' if title else 'Prodyssey - B2B SaaS Consulting' %}
+{% set pageDescription = description if description else 'Prodyssey guides B2B SaaS teams to profitable growth through innovative strategies and deep expertise.' %}
+{% set pageImage = image if image else '/assets/images/prodyssey-og-image.jpg' %}
+
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ pageDescription }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ pageDescription }}">
+<meta property="og:image" content="{{ site.url }}{{ pageImage }}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta property="twitter:title" content="{{ pageTitle }}">
+<meta property="twitter:description" content="{{ pageDescription }}">
+<meta property="twitter:image" content="{{ site.url }}{{ pageImage }}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+<!-- Additional SEO tags -->
+<meta name="robots" content="index, follow">
+<meta name="author" content="Craig Sturgis">

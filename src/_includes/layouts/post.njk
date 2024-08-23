@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="py-16 bg-circuit-pattern bg-opacity-5">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-serif font-bold text-primary mb-4">{{ title }}</h1>
+        <p class="text-text mb-8">Published on {{ date | dateFilter }}</p>
+        <div class="prose max-w-none">
+            {{ content | safe }}
+        </div>
+    </div>
+</article>
+
+{% if site.env == "production" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ title }}",
+  "image": "{{ site.url }}{{ image }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/images/logo.png"
+    }
+  },
+  "datePublished": "{{ date | dateFilter('yyyy-LL-dd') }}",
+  "dateModified": "{{ page.inputPath | lastModifiedDate }}",
+  "description": "{{ description }}"
+}
+</script>
+{% endif %}

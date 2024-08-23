@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Prodyssey</title>
+    {% include "components/seo.njk" %}
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen font-sans text-text bg-background">
+    <div class="fixed inset-0 pointer-events-none z-0 opacity-5">
+        <svg class="w-full h-full" viewBox="0 0 100 100">
+            <!-- Replace this with your actual SVG logo -->
+            <path d="M10,10 L90,10 L90,90 L10,90 Z" fill="currentColor"/>
+        </svg>
+    </div>
+    {% include "components/header.njk" %}
+    
+    <main class="flex-grow">
+        {{ content | safe }}
+    </main>
+
+    {% include "components/footer.njk" %}
+</body>
+</html>
