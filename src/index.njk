@@ -5,31 +5,39 @@ description: Prodyssey guides B2B SaaS teams to profitable growth through innova
 image: /assets/images/home-og-image.jpg
 ---
 
-<section class="text-center py-16 bg-circuit-pattern bg-opacity-5">
-    <h1 class="text-5xl font-serif font-bold text-primary mb-4">Navigate Your Product Odyssey</h1>
-    <p class="text-xl mb-8">Guiding B2B SaaS teams to profitable growth</p>
-    <a href="/contact" class="bg-accent text-white px-8 py-3 rounded-full hover:bg-secondary transition duration-300">Start Your Journey</a>
+<section class="text-center py-16 px-4 bg-circuit-pattern bg-opacity-5">
+    <div class="container mx-auto">
+        <h1 class="text-5xl font-serif font-bold text-primary mb-4">Navigate Your Product Odyssey</h1>
+        <p class="text-xl mb-8">Guiding B2B SaaS teams to profitable growth</p>
+        <a href="/contact" class="bg-accent text-white px-8 py-3 rounded-full hover:bg-secondary transition duration-300">Start Your Journey</a>
+    </div>
 </section>
 
-<section class="my-16">
-    <h2 class="text-3xl font-serif font-bold text-primary mb-8 text-center">Our Services</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {% include "components/service-pillar.njk" %}
+<section class="my-16 px-4">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-serif font-bold text-primary mb-8 text-center">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {% include "components/service-pillar.njk" %}
+        </div>
     </div>
 </section>
 
 <section class="bg-secondary text-white p-8 rounded-lg my-16 bg-greek-pattern bg-opacity-10">
-    <h2 class="text-3xl font-serif font-bold mb-4">The PTD4PG Framework</h2>
-    <p class="mb-4">Our proprietary approach to Product, Tech, and Data for Profitable Growth</p>
-    <a href="/ptd4pg" class="text-accent hover:underline">Learn More →</a>
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-serif font-bold mb-4">The PTD4PG Framework</h2>
+        <p class="mb-4">Our proprietary approach to Product, Tech, and Data for Profitable Growth</p>
+        <a href="/ptd4pg" class="text-accent hover:underline">Learn More →</a>
+    </div>
 </section>
 
-<section class="my-16">
-    <h2 class="text-3xl font-serif font-bold text-primary mb-8">Latest Insights</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {% for post in collections.posts | reverse | limit(2) %}
-            {% include "components/blog-post-card.njk" %}
-        {% endfor %}
+<section class="my-16 px-4">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-serif font-bold text-primary mb-8">Latest Insights</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {% for post in collections.posts | reverse | limit(2) %}
+                {% include "components/blog-post-card.njk" %}
+            {% endfor %}
+        </div>
     </div>
 </section>
 
