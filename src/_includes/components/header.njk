@@ -9,7 +9,22 @@
         </div>
         <ul class="flex space-x-6">
             <li><a href="/" class="hover:text-accent transition duration-300">Home</a></li>
-            <li><a href="/services" class="hover:text-accent transition duration-300">Services</a></li>
+            <li class="relative group">
+                <a href="/services" class="hover:text-accent transition duration-300">Services</a>
+                <ul class="absolute left-0 mt-2 w-48 bg-white text-primary rounded-md shadow-lg hidden group-hover:block">
+                    {% for pillar in collections.servicePillars | sort(attribute='data.order') %}
+                    <li class="relative group">
+                        <a href="{{ pillar.url }}" class="block px-4 py-2 hover:bg-gray-100">{{ pillar.data.title }}</a>
+                        <ul class="absolute left-full top-0 w-48 bg-white rounded-md shadow-lg hidden group-hover:block">
+                            {% set pillarCategories = collections.serviceCategories | filterByPillar(pillar.data.title) %}
+                            {% for category in pillarCategories | sort(attribute='data.order') %}
+                            <li><a href="{{ category.url }}" class="block px-4 py-2 hover:bg-gray-100">{{ category.data.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </li>
             <li><a href="/about" class="hover:text-accent transition duration-300">About</a></li>
             <li><a href="/blog" class="hover:text-accent transition duration-300">Blog</a></li>
             <li><a href="/contact" class="hover:text-accent transition duration-300">Contact</a></li>

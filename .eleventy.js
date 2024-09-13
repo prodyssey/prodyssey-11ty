@@ -21,6 +21,32 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("limit", function(array, limit) {
         return array.slice(0, limit);
     });
+
+    eleventyConfig.addCollection("servicePillars", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("src/service-pillars/*.md");
+    });
+  
+    eleventyConfig.addCollection("serviceCategories", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("src/service-categories/*.md");
+    });
+  
+    eleventyConfig.addCollection("services", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("src/services/*.md");
+    });
+  
+    eleventyConfig.addCollection("posts", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("src/blog/*.md");
+    });
+
+    // Add custom filters
+    eleventyConfig.addFilter("filterByPillar", function(categories, pillar) {
+      return categories.filter(category => category.data.pillar === pillar);
+    });
+
+    eleventyConfig.addFilter("filterByCategory", function(services, category) {
+      return services.filter(service => service.data.category === category);
+    });
+
     
     // Set custom directories for input, output, includes, and data
     return {
