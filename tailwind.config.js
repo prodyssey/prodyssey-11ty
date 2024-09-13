@@ -15,10 +15,10 @@ module.exports = {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
         serif: ['Merriweather', ...defaultTheme.fontFamily.serif],
       },
-      backgroundImage: {
-        'circuit-pattern': "url('/assets/images/circuit-pattern.svg')",
-        'greek-pattern': "url('/assets/images/greek-pattern.svg')",
-      },
+      // backgroundImage: {
+      //   'circuit-pattern': "url('/assets/images/circuit-pattern.svg')",
+      //   'greek-pattern': "url('/assets/images/greek-pattern.svg')",
+      // },
     },
   },
   plugins: [],

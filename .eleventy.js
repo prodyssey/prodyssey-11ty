@@ -47,7 +47,9 @@ module.exports = function(eleventyConfig) {
       return services.filter(service => service.data.category === category);
     });
 
-    
+    // Copy `src/assets` to `_site/assets`
+    eleventyConfig.addPassthroughCopy("src/assets/images/*");
+
     // Set custom directories for input, output, includes, and data
     return {
       dir: {
