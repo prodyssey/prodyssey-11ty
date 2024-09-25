@@ -1,5 +1,6 @@
 ---
 title: Product / Tech / Data Team Coaching
+slug: product-tech-data-team-coaching
 category: People
 order: 5
 ---

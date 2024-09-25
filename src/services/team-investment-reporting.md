@@ -1,5 +1,6 @@
 ---
 title: Team Investment Reporting
+slug: team-investment-reporting
 category: Visibility
 order: 2
 ---

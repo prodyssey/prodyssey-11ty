@@ -1,5 +1,6 @@
 ---
 title: Data + AI Readiness Delivery
+slug: data-ai-readiness-delivery
 category: Activation
 order: 5
 ---

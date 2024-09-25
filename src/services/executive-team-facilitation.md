@@ -1,5 +1,6 @@
 ---
 title: Executive Team Facilitation
+slug: executive-team-facilitation
 category: Strategic Advisory
 order: 1
 ---

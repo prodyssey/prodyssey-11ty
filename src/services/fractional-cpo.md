@@ -1,5 +1,6 @@
 ---
 title: Fractional CPO
+slug: fractional-cpo
 category: People
 order: 8
 ---

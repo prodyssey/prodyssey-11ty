@@ -1,5 +1,6 @@
 ---
 title: Tech Professional Services Spinout Support
+slug: tech-professional-services-spinout-support
 category: Activation
 order: 3
 ---

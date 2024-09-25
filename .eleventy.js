@@ -16,6 +16,10 @@ module.exports = function(eleventyConfig) {
     // Add DateTime to Nunjucks environment
     eleventyConfig.addNunjucksGlobal("DateTime", DateTime);
 
+    // Add take filter to limit the number of items in a collection
+    eleventyConfig.addFilter("take", function(array, limit) {
+        return array.slice(0, limit);
+    });
 
     // Add limit filter
     eleventyConfig.addFilter("limit", function(array, limit) {
@@ -44,7 +48,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addFilter("filterByCategory", function(services, category) {
-      return services.filter(service => service.data.category === category);
+      return services.filter(service => service.data.category.toLowerCase() === category.toLowerCase());
     });
 
     // Copy `src/assets` to `_site/assets`

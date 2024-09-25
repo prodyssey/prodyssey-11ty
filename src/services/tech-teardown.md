@@ -1,5 +1,6 @@
 ---
 title: Tech "Teardown"
+slug: tech-teardown
 category: Visibility
 order: 5
 ---

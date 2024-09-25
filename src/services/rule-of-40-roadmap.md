@@ -1,5 +1,6 @@
 ---
 title: Rule of 40 Roadmap
+slug: rule-of-40-roadmap
 category: Planning
 order: 1
 ---

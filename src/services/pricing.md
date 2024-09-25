@@ -1,5 +1,6 @@
 ---
 title: Pricing
+slug: pricing
 category: Go to Market Enablement
 order: 3
 ---

@@ -1,5 +1,6 @@
 ---
 title: Continuous Delivery Activation
+slug: continuous-delivery-activation
 category: Activation
 order: 4
 ---

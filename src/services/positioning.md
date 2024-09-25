@@ -1,5 +1,6 @@
 ---
 title: Positioning
+slug: positioning
 category: Go to Market Enablement
 order: 4
 ---

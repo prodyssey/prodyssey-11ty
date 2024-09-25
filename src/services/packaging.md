@@ -1,5 +1,6 @@
 ---
 title: Packaging
+slug: packaging
 category: Go to Market Enablement
 order: 2
 ---

@@ -1,5 +1,6 @@
 ---
 title: Product / Tech / Data Leader Coaching
+slug: product-tech-data-leader-coaching
 category: People
 order: 4
 ---

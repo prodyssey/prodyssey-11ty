@@ -1,5 +1,6 @@
 ---
 title: Platform Rebuild Alternative Roadmap
+slug: platform-rebuild-alternative-roadmap
 category: Planning
 order: 5
 ---

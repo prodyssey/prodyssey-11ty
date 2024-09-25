@@ -1,5 +1,6 @@
 ---
 title: Product Strategy Refinement
+slug: product-strategy-refinement
 category: Strategic Advisory
 order: 2
 ---

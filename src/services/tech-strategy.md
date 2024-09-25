@@ -1,5 +1,6 @@
 ---
 title: Tech Strategy
+slug: tech-strategy
 category: Strategic Advisory
 order: 3
 ---

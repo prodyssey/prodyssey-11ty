@@ -1,5 +1,6 @@
 ---
 title: New Leader Support
+slug: new-leader-support
 category: People
 order: 3
 ---

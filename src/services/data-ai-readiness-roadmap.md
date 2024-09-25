@@ -1,5 +1,6 @@
 ---
 title: Data + AI Readiness Roadmap
+slug: data-ai-readiness-roadmap
 category: Planning
 order: 2
 ---

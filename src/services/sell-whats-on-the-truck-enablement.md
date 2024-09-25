@@ -1,5 +1,6 @@
 ---
 title: Sell What's on the Truck Enablement
+slug: sell-whats-on-the-truck-enablement
 category: Go to Market Enablement
 order: 1
 ---

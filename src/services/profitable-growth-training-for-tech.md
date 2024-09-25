@@ -1,5 +1,6 @@
 ---
 title: Profitable Growth Training for Tech
+slug: profitable-growth-training-for-tech
 category: People
 order: 6
 ---

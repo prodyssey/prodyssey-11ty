@@ -1,5 +1,6 @@
 ---
 title: Tech Financial Model (FinDev) Workshop
+slug: tech-financial-model-findev-workshop
 category: Visibility
 order: 6
 ---

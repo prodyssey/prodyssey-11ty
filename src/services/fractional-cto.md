@@ -1,5 +1,6 @@
 ---
 title: Fractional CTO
+slug: fractional-cto
 category: People
 order: 7
 ---

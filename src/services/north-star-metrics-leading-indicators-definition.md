@@ -1,5 +1,6 @@
 ---
-title: North Star Leading Indicators Definition
+title: North Star Metrics Leading Indicators Definition
+slug: north-star-metrics-leading-indicators-definition
 category: Visibility
 order: 4
 ---

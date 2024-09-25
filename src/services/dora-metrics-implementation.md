@@ -1,5 +1,6 @@
 ---
-title: DORA MetricsImplementation
+title: DORA Metrics Implementation
+slug: dora-metrics-implementation
 category: Activation
 order: 2
 ---

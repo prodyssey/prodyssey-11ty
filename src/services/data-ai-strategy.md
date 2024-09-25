@@ -1,5 +1,6 @@
 ---
 title: Data + AI Strategy
+slug: data-ai-strategy
 category: Strategic Advisory
 order: 4
 ---

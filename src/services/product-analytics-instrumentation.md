@@ -1,5 +1,6 @@
 ---
 title: Product Analytics Instrumentation
+slug: product-analytics-instrumentation
 category: Activation
 order: 6
 ---

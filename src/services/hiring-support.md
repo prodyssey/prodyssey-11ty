@@ -1,5 +1,6 @@
 ---
 title: Hiring Support
+slug: hiring-support
 category: People
 order: 1
 ---

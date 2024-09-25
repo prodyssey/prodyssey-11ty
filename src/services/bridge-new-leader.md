@@ -1,5 +1,6 @@
 ---
 title: Bridge New Leader
+slug: bridge-new-leader
 category: People
 order: 2
 ---

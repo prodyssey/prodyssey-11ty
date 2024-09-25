@@ -15,31 +15,50 @@ image: /assets/images/home-og-image.jpg
 
 <section class="bg-secondary text-white p-8 rounded-lg my-16 bg-greek-pattern bg-opacity-10">
     <div class="container mx-auto">
-        <h2 class="text-3xl font-serif font-bold mb-4">The PTD4PG Framework</h2>
+        <h2 class="text-3xl font-serif font-bold mb-4">The PTDE Framework</h2>
         <p class="mb-4">Our battle-tested approach to SaaS Product, Tech, Data, and Enablement for Profitable Growth</p>
-        <a href="/ptd4pg" class="text-accent hover:underline">Learn More →</a>
+        <a href="/ptde-framework" class="text-accent hover:underline">Learn More →</a>
     </div>
 </section>
 
 <section class="my-16 px-4">
     <div class="container mx-auto">
+        
         <h2 class="text-3xl font-serif font-bold text-primary mb-8 text-center">Services</h2>
+        
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
             {% for pillar in collections.servicePillars | sort(attribute='data.order') %}
+        
             <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-serif font-bold text-secondary mb-4">{{ pillar.data.title }}</h3>
-                <p class="mb-4">{{ pillar.templateContent | safe }}</p>
-    
+        
+                <h3 class="text-2xl font-serif font-bold text-secondary my-2">{{ pillar.data.title }}</h3>
+        
+                <p class="my-4">{{ pillar.templateContent | safe }}</p>
+        
                 {% set pillarCategories = collections.serviceCategories | filterByPillar(pillar.data.title) %}
-                {% for category in pillarCategories | sort(attribute='data.order') %}
-                <h4 class="text-xl font-serif font-bold text-secondary mb-4">{{ category.data.title }}</h4>
-                <ul class="list-disc list-inside mb-4">
-                    {% set categoryServices = collections.services | filterByCategory(category.data.title) %}
-                    {% for service in categoryServices | sort(attribute='data.order') | slice(0, 2) %}
-                    <li>{{ service.data.title }}</li>
+        
+                {% if pillarCategories.length > 0 %}
+                    <div class="mt-6">
+                    {% for category in pillarCategories | sort(attribute='data.order') %}
+                    <h4 class="text-xl font-serif font-bold text-secondary p-4">{{ category.data.title }}</h4>
+
+                    <ul class="list-disc list-inside mb-2 p-2">
+                        {% set categoryServices = collections.services | filterByCategory(category.data.title) %}
+                        {% if categoryServices and categoryServices.length > 0 %}
+                            {% for service in categoryServices | sort(attribute='data.order') %}
+                            <li class="my-2"><a href="/services/{{ service.data.slug }}">{{ service.data.title }}</a></li>
+                            {% endfor %}
+                        {% else %}
+                            <li>No services found for category: {{ category.data.title }}</li>
+                        {% endif %}
+                    </ul>
                     {% endfor %}
-                </ul>
-                {% endfor %}
+                    </div>
+                {% else %}
+                    <p>No categories found for pillar: {{ pillar.data.title }}</p>
+                {% endif %}
+        
                 <a href="{{ pillar.url }}" class="text-accent hover:underline">Learn More →</a>
             </div>
             {% endfor %}

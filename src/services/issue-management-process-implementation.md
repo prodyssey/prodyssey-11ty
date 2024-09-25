@@ -1,5 +1,6 @@
 ---
 title: Issue Management Process Implementation
+slug: issue-management-process-implementation
 category: Activation
 order: 1
 ---
