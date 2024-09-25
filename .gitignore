@@ -4,3 +4,7 @@ npm-debug.log*
 
 # Production build files
 _site/
+
+# System files
+.DS_Store
+**/.DS_Store
