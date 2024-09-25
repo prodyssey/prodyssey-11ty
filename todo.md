@@ -3,6 +3,7 @@
 - [x] Home Page Services populate the top 3 services in each service category
 - [ ] Good enough individual stub page and contentfor all services
 - [ ] Services index is good enough
+- [ ] PTDE Framework page is good enough
 - [ ] About page is good enough
 - [ ] Contact page is good enough, form works
 - [ ] Blog has one article on it from a recent linkedin post
