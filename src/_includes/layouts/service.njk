@@ -4,10 +4,42 @@ layout: layouts/base.njk
 
 <article class="py-16 bg-circuit-pattern bg-opacity-5">
     <div class="container mx-auto px-4">
-        <h1 class="text-4xl font-serif font-bold text-primary mb-8">{{ title }}</h1>
-        <div class="prose max-w-none">
+        <h1 class="text-4xl font-serif font-bold text-primary mb-8">
+            {% if altTitle %}
+                {{ altTitle }}
+            {% else %}
+                {{ title }}
+            {% endif %}
+        </h1>
+        
+        {% if description %}
+        <p class="text-xl mb-8">{{ description }}</p>
+        {% endif %}
+        
+        <div class="prose max-w-none mb-8 space-y-6">
             {{ content | safe }}
         </div>
-        <a href="/contact" class="inline-block mt-8 bg-accent text-white px-6 py-2 rounded-full hover:bg-secondary transition duration-300">Inquire About This Service</a>
+        
+        {% if category %}
+        <div class="mb-8">
+            <h2 class="text-2xl font-serif font-bold text-secondary mb-4">Category</h2>
+            <p>{{ category }}</p>
+        </div>
+        {% endif %}
+        
+        {% if relatedServices %}
+        <div class="mb-8">
+            <h2 class="text-2xl font-serif font-bold text-secondary mb-4">Related Services</h2>
+            <ul class="list-disc list-inside">
+                {% for service in relatedServices %}
+                <li><a href="/services/{{ service.slug }}" class="text-accent hover:underline">{{ service.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        
+        <a href="/contact" class="inline-block bg-accent text-white px-6 py-3 rounded-full hover:bg-secondary transition duration-300">Let's Talk About This</a>
     </div>
 </article>
+
+{% include "components/service-structured-data.njk" %}
