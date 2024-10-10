@@ -1,7 +1,13 @@
 ---
+layout: layouts/service.njk
 title: Issue Management Process Implementation
+description: Avoid getting bogged down with reactive firefighting.
 slug: issue-management-process-implementation
 category: Activation
 order: 1
 ---
-Implement a robust issue management process to efficiently identify, prioritize, and resolve challenges across your organization, improving overall productivity and customer satisfaction.
+Many SaaS companies end up in a spot where they struggle to manage issues that are impacting customers while making progress on strategic work.
+
+Customers are complaining, front line CX folks are frustrated, and the team is spread thin and stressed by both the constant firefighting and the slowed pace of progress on the roadmap.
+
+We have implemented clear and easy to follow issue management processes that can help align your customer facing and technical teams around solving the most critical issues and their contributing causes while retaining the necessary focus to move you forward.

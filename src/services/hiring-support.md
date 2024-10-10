@@ -1,7 +1,15 @@
 ---
+layout: layouts/service.njk
 title: Hiring Support
+description: Confidently Identify, Evaluate, and Hire Key Talent
 slug: hiring-support
 category: People
+relatedServices:
+  - { title: Bridge New Leader, slug: bridge-new-leader }
 order: 1
 ---
-Expert assistance in identifying, attracting, and selecting top talent for your product, technology, and data teams, ensuring you build a high-performing workforce aligned with your company's goals.
+Hiring the wrong fit for key positions in product, tech, and data are a huge risk to any SaaS company.
+
+We've helped multiple companies evaluate and hire key full time talent from CTOs to key engineers to product managers.
+
+We can help you reduce the risk and opportunity cost of a hire by partnering with you to evaluate candidates and provide guidance on how to make the best hiring decision.

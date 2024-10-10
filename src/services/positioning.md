@@ -1,7 +1,13 @@
 ---
+layout: layouts/service.njk
 title: Positioning
+description: Differentiate Your Offerings
 slug: positioning
 category: Go to Market Enablement
 order: 4
 ---
-Craft a clear and compelling product positioning strategy that differentiates your offerings in the market, resonates with your target audience, and supports your overall business objectives.
+Positioning is the key building block of a differentiated, sellable SaaS offering.
+
+IF you don't position well, you get lost in a sea of options.
+
+We can be a key, experienced partner in helping you identify where your product should fit in the market and how to stand out vs. competitors and most importantly vs. status quo.
