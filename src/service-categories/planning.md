@@ -3,4 +3,4 @@ title: Planning
 pillar: Set the Right Course
 order: 2
 ---
-Our Planning services help you chart a clear course for your B2B SaaS company's growth and success. We provide strategic roadmaps and frameworks tailored to your unique challenges and opportunities.
+Plans always change, but good planning is invaluable. We can help you create effective, adaptable plans that you can stand behind but enable the agility to navigate in the moment.
