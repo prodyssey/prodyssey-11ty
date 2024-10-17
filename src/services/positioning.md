@@ -3,7 +3,7 @@ layout: layouts/service.njk
 title: Positioning
 description: Differentiate Your Offerings
 slug: positioning
-category: Go to Market Enablement
+category: Go to Market (GTM) Enablement
 order: 4
 ---
 Positioning is the key building block of a differentiated, sellable SaaS offering.

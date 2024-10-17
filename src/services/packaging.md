@@ -3,7 +3,7 @@ layout: layouts/service.njk
 title: Packaging
 description: Put the Right Things Together
 slug: packaging
-category: Go to Market Enablement
+category: Go to Market (GTM) Enablement
 relatedServices:
   - { title: "Pricing", slug: "pricing" }
   - { title: "Positioning", slug: "positioning" }
