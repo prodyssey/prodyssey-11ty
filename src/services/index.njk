@@ -1,29 +1,39 @@
 ---
 layout: layouts/base.njk
-title: Our Services
+title: Services
 ---
 
 <section class="py-16 bg-circuit-pattern bg-opacity-5">
     <div class="container mx-auto px-4">
-        <h1 class="text-4xl font-serif font-bold text-primary mb-8 text-center">Our Services</h1>
-        <p class="text-xl mb-12 text-center">Comprehensive solutions to guide your B2B SaaS journey</p>
+        <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4 text-center">{{ title }}</h1>
+        <p class="text-xl md:text-2xl mb-12 text-center max-w-3xl mx-auto">We'll help you mix and match the right services to get to your next milestone.</p>
         
         {% for pillar in collections.servicePillars | sort(attribute='data.order') %}
         <div class="mb-16">
-            <h2 class="text-3xl font-serif font-bold text-secondary mb-6">{{ pillar.data.title }}</h2>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-secondary mb-4 text-center">{{ pillar.data.title }}</h2>
+            <div class="flex justify-center">
+                <p class="text-lg md:text-xl mb-8 text-center max-w-3xl mx-auto">{{ pillar.data.description }}</p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {% set pillarCategories = collections.serviceCategories | filterByPillar(pillar.data.title) %}
                 {% for category in pillarCategories | sort(attribute='data.order') %}
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-serif font-bold text-primary mb-4">{{ category.data.title }}</h3>
-                    <p class="mb-4">{{ category.templateContent | safe }}</p>
-                    {% set categoryServices = collections.services | filterByCategory(category.data.title) %}
-                    <ul class="list-disc list-inside mb-4">
-                        {% for service in categoryServices | sort(attribute='data.order') %}
-                        <li>{{ service.data.title }}</li>
-                        {% endfor %}
-                    </ul>
-                    <a href="{{ category.url }}" class="text-accent hover:underline">Learn More →</a>
+                <div class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg flex flex-col h-full">
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-serif font-bold text-primary mb-4"><a href="{{ category.url }}">{{ category.data.title }}</a></h3>
+                        <p class="mb-6 text-gray-600">{{ category.data.description }}</p>
+                        {% set categoryServices = collections.services | filterByCategory(category.data.title) %}
+                        <ul class="list-none mb-6 space-y-2 mt-4">
+                            {% for service in categoryServices | sort(attribute='data.order') %}
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                                <a href="{{ service.url }}" class="text-accent hover:underline">{{ service.data.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {# <div class="mt-auto text-center">
+                        <a href="{{ category.url }}" class="inline-block bg-accent text-white py-2 px-6 rounded hover:bg-accent-dark transition-colors duration-300">Learn More about {{ category.data.title }}</a>
+                    </div> #}
                 </div>
                 {% endfor %}
             </div>

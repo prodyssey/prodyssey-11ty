@@ -1,6 +1,6 @@
 ---
 title: People
+description: An effective, fully enabled team is what is necessary for sustainable, profitable growth. Prodyssey can help you build and equip a mighty one.
 pillar: Strengthen Your Team
 order: 4
 ---
-Our People services focus on developing, supporting, and empowering your leadership and teams to drive innovation, efficiency, and growth in your B2B SaaS company.
