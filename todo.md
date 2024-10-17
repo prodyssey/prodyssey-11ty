@@ -4,7 +4,7 @@
 - [x] Good enough individual stub page and content for all services
 - [x] Services index is good enough
 - [x] PTDE Framework page is good enough
-- [ ] Category pages are good enough
+- [x] Category pages are good enough
 - [ ] About page is good enough
 - [ ] Contact page is good enough, form works
 - [ ] Blog has one article on it from a recent linkedin post

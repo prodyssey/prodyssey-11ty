@@ -3,7 +3,7 @@ layout: layouts/service.njk
 title: Pricing
 description: Optimize Your Value Capture
 slug: pricing
-category: Go to Market Enablement
+category: Go to Market (GTM) Enablement
 relatedServices:
   - { title: "Positioning", slug: "positioning" }
   - { title: "Packaging", slug: "packaging" }
