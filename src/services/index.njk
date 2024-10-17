@@ -3,11 +3,28 @@ layout: layouts/base.njk
 title: Services
 ---
 
+<header class="py-16">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <h1 class="text-5xl md:text-6xl font-serif font-bold text-primary mb-6 text-center">{{ title }}</h1>
+        <p class="text-xl md:text-2xl mb-0 text-center max-w-3xl mx-auto text-gray-700">We'll help you mix and match the right services to get to your next milestone.</p>
+    </div>
+</header>
+
+<div class="relative">
+    <div class="absolute inset-0 flex items-center" aria-hidden="true">
+        <div class="w-full "></div>
+    </div>
+    <div class="relative flex justify-center">
+        <span class=" px-3 text-lg font-medium text-gray-900">
+            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+            </svg>
+        </span>
+    </div>
+</div>
+
 <section class="py-16 bg-circuit-pattern bg-opacity-5">
-    <div class="container mx-auto px-4">
-        <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4 text-center">{{ title }}</h1>
-        <p class="text-xl md:text-2xl mb-12 text-center max-w-3xl mx-auto">We'll help you mix and match the right services to get to your next milestone.</p>
-        
+    <div class="container mx-auto px-4 max-w-4xl">
         {% for pillar in collections.servicePillars | sort(attribute='data.order') %}
         <div class="mb-16">
             <h2 class="text-3xl md:text-4xl font-serif font-bold text-secondary mb-4 text-center">{{ pillar.data.title }}</h2>
@@ -20,7 +37,7 @@ title: Services
                 <div class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg flex flex-col h-full">
                     <div class="flex-grow">
                         <h3 class="text-2xl font-serif font-bold text-primary mb-4"><a href="{{ category.url }}">{{ category.data.title }}</a></h3>
-                        <p class="mb-6 text-gray-600">{{ category.data.description }}</p>
+                        <p class="mb-6 text-gray-600">{{ category.datadescription }}</p>
                         {% set categoryServices = collections.services | filterByCategory(category.data.title) %}
                         <ul class="list-none mb-6 space-y-2 mt-4">
                             {% for service in categoryServices | sort(attribute='data.order') %}
