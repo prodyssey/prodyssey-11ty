@@ -5,8 +5,9 @@
 - [x] Services index is good enough
 - [x] PTDE Framework page is good enough
 - [x] Category pages are good enough
-- [ ] About page is good enough
+- [x] About page is good enough
 - [ ] Contact page is good enough, form works
+- [ ] Blog list and blog post pages are good enough
 - [ ] Blog has one article on it from a recent linkedin post
 - [ ] Building / posting on netlify
 - [ ] Make sure it looks good on mobile
