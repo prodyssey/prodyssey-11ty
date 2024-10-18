@@ -6,9 +6,9 @@ title: Contact Us
 <section class="py-16 bg-circuit-pattern bg-opacity-5">
     <div class="container mx-auto px-4">
         <h1 class="text-4xl font-serif font-bold text-primary mb-8 text-center">Contact Us</h1>
-        <p class="text-xl mb-12 text-center">Ready to start your product odyssey? Get in touch with us today.</p>
+        <p class="text-xl mb-12 text-center">Ready to talk? Let's go!</p>
         
-        <form class="max-w-lg mx-auto" action="/submit-form" method="POST">
+        <form class="max-w-lg mx-auto" name="contact" netlify>
             <div class="mb-6">
                 <label for="name" class="block text-text mb-2">Name</label>
                 <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
@@ -18,8 +18,24 @@ title: Contact Us
                 <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
             </div>
             <div class="mb-6">
-                <label for="message" class="block text-text mb-2">Message</label>
-                <textarea id="message" name="message" rows="5" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                <label for="phone" class="block text-text mb-2">Phone</label>
+                <input type="text" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
+            </div>
+            <div class="mb-6">
+                <label for="problem" class="block text-text mb-2">Your Biggest Problem?</label>
+                <textarea id="problem" name="problem" rows="3" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+            </div>
+            <div class="mb-6">
+                <label for="contact-preference" class="block text-text mb-2">How do you want to be contacted?</label>
+                <select id="contact-preference" name="contact-preference" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
+                    <option value="email">Email</option>
+                    <option value="text">Text</option>
+                    <option value="phone">Phone</option>
+                </select>
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-text mb-2">Is there something else?</label>
+                <textarea id="message" name="message" rows="5" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
             </div>
             <button type="submit" class="w-full bg-accent text-white px-6 py-3 rounded-full hover:bg-secondary transition duration-300">Send Message</button>
         </form>
