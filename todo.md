@@ -18,11 +18,14 @@
 - [ ] favicon
 - [ ] Hero image / Logo on top left
 - [ ] mailing list
+- [ ] problems i solve section - three - right under PTDE
 - [ ] Color scheme finalized - eye on dark mode
 - [ ] Dark mode support
 - [ ] site indexing
 - [ ] analytics
+- [ ] open graph tags
 - [ ] process - working with us / how we work
+- [ ] blog post front matter - related services with links
 - [ ] service pages - problems they solve, outcomes
 - [ ] testimonials
 - [ ] client logos
