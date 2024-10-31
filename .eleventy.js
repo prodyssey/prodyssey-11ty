@@ -39,7 +39,7 @@ module.exports = function(eleventyConfig) {
     });
   
     eleventyConfig.addCollection("posts", function(collectionApi) {
-      return collectionApi.getFilteredByGlob("src/blog/*.md");
+      return collectionApi.getFilteredByGlob("src/posts/*.md");
     });
 
     // Add custom filters

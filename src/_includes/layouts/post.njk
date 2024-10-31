@@ -3,12 +3,20 @@ layout: layouts/base.njk
 ---
 
 <article class="py-16 bg-circuit-pattern bg-opacity-5">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 max-w-4xl">
         <h1 class="text-4xl font-serif font-bold text-primary mb-4">{{ title }}</h1>
-        <p class="text-text mb-8">Published on {{ date | dateFilter }}</p>
-        <div class="prose max-w-none">
+        <p class="text-text mb-8">
+            Published on {{ date | dateFilter }}
+            {% if author %}
+            by {{ author }}
+            {% endif %}
+        </p>
+        <div class="prose max-w-prose space-y-4">
             {{ content | safe }}
         </div>
+        {% if conversationUrl %}
+        <a href="{{ conversationUrl }}" class="text-accent hover:underline">Join the conversation</a>
+        {% endif %}
     </div>
 </article>
 
@@ -21,7 +29,7 @@ layout: layouts/base.njk
   "image": "{{ site.url }}{{ image }}",
   "author": {
     "@type": "Person",
-    "name": "{{ site.author }}"
+    "name": "{{ author if author else site.author }}"
   },
   "publisher": {
     "@type": "Organization",
