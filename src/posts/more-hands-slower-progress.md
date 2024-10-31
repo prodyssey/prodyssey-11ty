@@ -1,12 +1,12 @@
 ---
 layout: layouts/post.njk
-title: "Cursor is WAY better than GitHub copilot right now."
-description: "Mind Reader as IDE"
+title: "More Hands, Slower Progress?"
+description: "Navigating Team Growth in Digital Products"
 author: "Craig Sturgis"
-date: 2024-09-13
+date: 2024-09-22
 # image: /assets/images/blog/saas-growth-plateau.jpg
-tags: ["AI Tools"]
-conversationUrl: https://www.linkedin.com/posts/craigsturgis_cursor-is-way-better-than-github-copilot-activity-7240072639677878272-M70a
+tags: ["More with Less", "Team Topologies"]
+conversationUrl: https://www.linkedin.com/posts/craigsturgis_in-digital-products-adding-more-people-makes-activity-7232440046862188546-iGhX
 ---
 
 Cursor is WAY better than GitHub copilot right now.
