@@ -70,9 +70,12 @@ image: /assets/images/home-og-image.jpg
     <div class="container mx-auto">
         <h2 class="text-3xl font-serif font-bold text-primary mb-8">Latest Posts</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {% for post in collections.posts | reverse | limit(2) %}
+            {% for post in collections.posts | reverse | limit(3) %}
                 {% include "components/blog-post-card.njk" %}
             {% endfor %}
+        </div>
+        <div class="text-center mt-8">
+            <a href="/posts" class="text-accent hover:underline">View All Posts →</a>
         </div>
     </div>
 </section>
