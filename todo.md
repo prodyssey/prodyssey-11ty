@@ -1,3 +1,26 @@
+# Next
+
+- [ ] favicon
+- [ ] Hero image / Logo on top left
+- [ ] mailing list
+- [ ] problems i solve section - three - right under PTDE
+- [ ] intro page - Non tech vs. Tech, replace as CTA
+- [ ] Color scheme finalized - eye on dark mode
+- [ ] Dark mode support
+- [ ] site indexing
+- [ ] analytics
+- [ ] open graph tags
+- [ ] process - working with us / how we work
+- [ ] blog post front matter - related services with links
+- [ ] service pages - problems they solve, outcomes
+- [ ] testimonials
+- [ ] client logos
+- [ ] blog posts - key posts from linkedin
+- [ ] packages
+- [ ] pricing?
+
+# Completed
+
 # Launch
 
 - [x] Home Page Services populate the top 3 services in each service category
@@ -12,24 +35,4 @@
 - [x] Building / posting on netlify
 - [x] DNS pointed to netlify
 - [x] Make sure it looks good enough on mobile
-
-# Next
-
-- [ ] contact form optional labels
-- [ ] favicon
-- [ ] Hero image / Logo on top left
-- [ ] mailing list
-- [ ] problems i solve section - three - right under PTDE
-- [ ] Color scheme finalized - eye on dark mode
-- [ ] Dark mode support
-- [ ] site indexing
-- [ ] analytics
-- [ ] open graph tags
-- [ ] process - working with us / how we work
-- [ ] blog post front matter - related services with links
-- [ ] service pages - problems they solve, outcomes
-- [ ] testimonials
-- [ ] client logos
-- [ ] blog posts - key posts from linkedin
-- [ ] packages
-- [ ] pricing?
+- [x] contact form optional labels
