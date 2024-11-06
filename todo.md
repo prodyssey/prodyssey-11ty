@@ -11,10 +11,10 @@
 - [x] Blog has one article on it from a recent linkedin post
 - [x] Building / posting on netlify
 - [x] DNS pointed to netlify
+- [x] Make sure it looks good enough on mobile
 
 # Next
 
-- [ ] Make sure it looks good on mobile
 - [ ] contact form optional labels
 - [ ] favicon
 - [ ] Hero image / Logo on top left
