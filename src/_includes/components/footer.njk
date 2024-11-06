@@ -1,5 +1,14 @@
 <footer class="bg-primary text-white py-6 mt-auto">
     <div class="container mx-auto text-center">
+        <!-- Mobile-only navigation -->
+        <nav class="md:hidden mb-4">
+            <ul class="flex flex-col space-y-2">
+                <li><a href="/" class="hover:text-gray-300">Home</a></li>
+                <li><a href="/blog" class="hover:text-gray-300">Blog</a></li>
+                <li><a href="/about" class="hover:text-gray-300">About</a></li>
+                <li><a href="/contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
         <p>&copy; {{ site.currentYear }} Prodyssey. All rights reserved.</p>
     </div>
 </footer>

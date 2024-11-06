@@ -7,14 +7,15 @@
 - [x] Category pages are good enough
 - [x] About page is good enough
 - [x] Contact page is good enough, form works
-- [ ] Blog list and blog post pages are good enough
-- [ ] Blog has one article on it from a recent linkedin post
+- [x] Blog list and blog post pages are good enough
+- [x] Blog has one article on it from a recent linkedin post
 - [x] Building / posting on netlify
-- [ ] Make sure it looks good on mobile
-- [ ] DNS pointed to netlify
+- [x] DNS pointed to netlify
 
 # Next
 
+- [ ] Make sure it looks good on mobile
+- [ ] contact form optional labels
 - [ ] favicon
 - [ ] Hero image / Logo on top left
 - [ ] mailing list
@@ -29,4 +30,3 @@
 - [ ] blog posts - key posts from linkedin
 - [ ] packages
 - [ ] pricing?
-
