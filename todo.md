@@ -1,14 +1,12 @@
 # Next
 
 - [ ] favicon
-- [ ] Hero image / Logo on top left
 - [ ] mailing list
-- [ ] problems i solve section - three - right under PTDE
-- [ ] intro page - Non tech vs. Tech, replace as CTA
-- [ ] Color scheme finalized - eye on dark mode
-- [ ] Dark mode support
 - [ ] site indexing
 - [ ] analytics
+- [ ] Color scheme finalized - eye on dark mode
+- [ ] Dark mode support
+- [ ] Hero image / Logo on top left
 - [ ] open graph tags
 - [ ] process - working with us / how we work
 - [ ] blog post front matter - related services with links
@@ -20,6 +18,8 @@
 - [ ] pricing?
 
 # Completed
+
+- [x] intro on index
 
 # Launch
 
@@ -36,3 +36,7 @@
 - [x] DNS pointed to netlify
 - [x] Make sure it looks good enough on mobile
 - [x] contact form optional labels
+
+# Dropped
+
+- [ ] problems i solve section - three - right under PTDE
