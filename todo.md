@@ -19,6 +19,7 @@
 
 # Completed
 
+- [x] Remove about card from home page
 - [x] PTDE Framework to Prodyssey Framework
 - [x] intro on index
 
