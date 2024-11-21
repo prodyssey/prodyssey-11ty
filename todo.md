@@ -1,17 +1,24 @@
 # Next
 
-- [ ] favicon
-- [ ] mailing list
 - [ ] site indexing
+- [ ] a couple more posts imported
 - [ ] analytics
+- [ ] services page contact CTA
+- [ ] intro edit
+- [ ] featured posts on site index instead of latest
+- [ ] images on posts and on index
+- [ ] featured posts on the top of site index above the email signup
 - [ ] Color scheme finalized - eye on dark mode
-- [ ] Dark mode support
+- [ ] favicon
 - [ ] Hero image / Logo on top left
+- [ ] buttondown styling to match color scheme
 - [ ] open graph tags
+- [ ] testimonials
+- [ ] Dark mode support
 - [ ] process - working with us / how we work
 - [ ] blog post front matter - related services with links
 - [ ] service pages - problems they solve, outcomes
-- [ ] testimonials
+- [ ] don't show email signup if already subscribed
 - [ ] client logos
 - [ ] blog posts - key posts from linkedin
 - [ ] packages
@@ -19,6 +26,7 @@
 
 # Completed
 
+- [x] mailing list on main index and on posts index and on posts
 - [x] Remove about card from home page
 - [x] PTDE Framework to Prodyssey Framework
 - [x] intro on index
