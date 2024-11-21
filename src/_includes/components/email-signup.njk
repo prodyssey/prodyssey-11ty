@@ -1,0 +1,37 @@
+<div
+  class="mt-16 max-w-2xl mx-auto bg-gradient-to-br from-secondary/10 to-primary/10 p-8 md:p-12 rounded-2xl shadow-xl border border-primary/20"
+>
+  <form
+    action="https://buttondown.com/api/emails/embed-subscribe/prodyssey"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.com/prodyssey', 'popupwindow')"
+    class="embeddable-buttondown-form"
+  >
+    <div class="text-center mb-8">
+      <h3 class="text-3xl font-serif font-bold text-primary mb-3">
+        {{ emailSignup.heading | default('Get insights from The Journey') }}
+      </h3>
+      <p class="text-gray-700 text-lg">
+        {{ emailSignup.subheading | default('Join other SaaS leaders receiving valuable insights straight to their inbox.') }}
+      </p>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+      <input
+        type="email"
+        name="email"
+        id="bd-email"
+        placeholder="Enter your email"
+        class="flex-1 p-4 border-2 border-gray-200 rounded-lg bg-white/90 focus:ring-2 focus:ring-accent focus:border-transparent shadow-sm"
+        required
+      />
+      <button
+        type="submit"
+        class="bg-accent text-white font-bold py-4 px-8 rounded-lg hover:bg-accent/90 transition-colors shadow-sm whitespace-nowrap"
+      >
+        {{ emailSignup.buttonText | default('Subscribe') }}
+      </button>
+    </div>
+  </form>
+</div>

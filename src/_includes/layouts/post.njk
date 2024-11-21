@@ -3,45 +3,52 @@ layout: layouts/base.njk
 ---
 
 <article class="py-16 bg-circuit-pattern bg-opacity-5">
-    <div class="container mx-auto px-4 max-w-4xl">
-        <h1 class="text-4xl font-serif font-bold text-primary mb-4">{{ title }}</h1>
-        <p class="text-text mb-8">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <h1 class="text-4xl font-serif font-bold text-primary mb-4">{{ title }}</h1>
+    <p class="text-text mb-8">
             Published on {{ date | dateFilter }}
-            {% if author %}
+      {% if author %}
             by {{ author }}
-            {% endif %}
-        </p>
-        <div class="prose max-w-prose space-y-4">
-            {{ content | safe }}
-        </div>
-        {% if conversationUrl %}
-        <a href="{{ conversationUrl }}" class="text-accent hover:underline">Join the conversation</a>
-        {% endif %}
+      {% endif %}
+    </p>
+    <div class="prose max-w-prose space-y-4">
+      {{ content | safe }}
     </div>
+    {% if conversationUrl %}
+      <a href="{{ conversationUrl }}" class="text-accent hover:underline">Join the conversation</a>
+    {% endif %}
+  </div>
+  {% set emailSignup = {
+    heading: "Sign up for more",
+    subheading: "We'll keep you updated with the latest insights as we share them.",
+    buttonText: "Subscribe"
+  } %}
+
+  {% include "components/email-signup.njk" %}
 </article>
 
 {% if site.env == "production" %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "{{ title }}",
-  "image": "{{ site.url }}{{ image }}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ author if author else site.author }}"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ site.name }}",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ site.url }}/assets/images/logo.png"
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ title }}",
+      "image": "{{ site.url }}{{ image }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ author if author else site.author }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/assets/images/logo.png"
+        }
+      },
+      "datePublished": "{{ date | dateFilter('yyyy-LL-dd') }}",
+      "dateModified": "{{ page.inputPath | lastModifiedDate }}",
+      "description": "{{ description }}"
     }
-  },
-  "datePublished": "{{ date | dateFilter('yyyy-LL-dd') }}",
-  "dateModified": "{{ page.inputPath | lastModifiedDate }}",
-  "description": "{{ description }}"
-}
-</script>
+  </script>
 {% endif %}
