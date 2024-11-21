@@ -1,5 +1,7 @@
 <div class="bg-white p-6 rounded-lg shadow-md">
-    <h3 class="text-xl font-bold text-secondary mb-2">{{ post.data.title }}</h3>
+    <h3 class="text-xl font-bold text-secondary mb-2">
+        <a href="{{ post.url }}" class="hover:underline">{{ post.data.title }}</a>
+    </h3>
     <p class="mb-4">{{ post.data.description }}</p>
     <a href="{{ post.url }}" class="text-accent hover:underline">Read More →</a>
 </div>
