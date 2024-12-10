@@ -1,6 +1,12 @@
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
+  // Determine if we're in production based on Netlify's environment variable
+  const isProd = process.env.CONTEXT === "production";
+
+  // Add this environment info to Eleventy's global data
+  eleventyConfig.addGlobalData("isProd", isProd);
+
   // Add dateFilter
   eleventyConfig.addFilter("dateFilter", function (date, format) {
     return DateTime.fromJSDate(date).toFormat(format || "dd LLLL yyyy");

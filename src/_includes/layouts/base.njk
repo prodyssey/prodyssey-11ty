@@ -6,15 +6,14 @@
         <title>{{ title }} - Prodyssey</title>
 
         <!-- Debug info -->
-        {% if eleventy.env.mode == "production" %}
+        {% if isProd %}
             <!-- ENV: PRODUCTION -->
         {% else %}
-            <!-- ENV: {{ eleventy.env.mode or 'NOT SET' }} -->
-            <!-- env.ELEVENTY_ENV: {{ process.env.ELEVENTY_ENV or 'NOT SET' }} -->
+            <!-- ENV: DEVELOPMENT -->
         {% endif %}
 
         <!-- Google Analytics 4 (production only) -->
-        {% if eleventy.env.mode == "production" or process.env.ELEVENTY_ENV == "production" %}
+        {% if isProd %}
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYH51VNXYM"></script>
             <script>
                 window.dataLayer = window.dataLayer || [];
