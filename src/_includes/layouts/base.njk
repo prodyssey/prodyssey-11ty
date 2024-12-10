@@ -10,6 +10,7 @@
             <!-- ENV: PRODUCTION -->
         {% else %}
             <!-- ENV: {{ eleventy.env.mode or 'NOT SET' }} -->
+            <!-- env.ELEVENTY_ENV: {{ process.env.ELEVENTY_ENV or 'NOT SET' }} -->
         {% endif %}
 
         <!-- Google Analytics 4 (production only) -->
