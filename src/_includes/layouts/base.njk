@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ title }} - Prodyssey</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Prodyssey</title>
 
-        <!-- Google Analytics 4 -->
-        {% if ga4Id %}
-            <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga4Id }}"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
-                gtag('js', new Date());
-                gtag('config', '{{ ga4Id }}');
-            </script>
-        {% endif %}
+    <!-- Google Analytics 4 (production only) -->
+    {% if eleventy.env.mode == "production" %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYH51VNXYM"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-QYH51VNXYM');
+      </script>
+    {% endif %}
 
-        {% include "components/seo.njk" %}
-        <link rel="stylesheet" href="/assets/css/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
-    </head>
-    <body class="flex flex-col min-h-screen font-sans text-text bg-background">
-        <div class="fixed inset-0 pointer-events-none z-0 opacity-5"></div>
-        {% include "components/header.njk" %}
+    {% include "components/seo.njk" %}
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body class="flex flex-col min-h-screen font-sans text-text bg-background">
+    <div class="fixed inset-0 pointer-events-none z-0 opacity-5"></div>
+    {% include "components/header.njk" %}
 
-        <main class="flex-grow">
-            {{ content | safe }}
-        </main>
+    <main class="flex-grow">
+      {{ content | safe }}
+    </main>
 
-        {% include "components/footer.njk" %}
-    </body>
+    {% include "components/footer.njk" %}
+  </body>
 </html>
