@@ -11,3 +11,6 @@ _site/
 
 # Local Netlify folder
 .netlify
+
+# Environment variables
+.env

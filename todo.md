@@ -2,9 +2,8 @@
 
 - [ ] site indexing
 - [ ] a couple more posts imported
-- [ ] analytics
-- [ ] services page contact CTA
-- [ ] intro edit
+- [ ] framework - problems it solves (?)
+- [ ] Header items - include framework? rename posts?
 - [ ] featured posts on site index instead of latest
 - [ ] images on posts and on index
 - [ ] featured posts on the top of site index above the email signup
@@ -26,6 +25,9 @@
 
 # Completed
 
+- [x] analytics
+- [x] services page contact CTA
+- [x] intro edit
 - [x] mailing list on main index and on posts index and on posts
 - [x] Remove about card from home page
 - [x] PTDE Framework to Prodyssey Framework
