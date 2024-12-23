@@ -14,4 +14,4 @@ Prodyssey will engage with your team directly and via anonymized survey to uncov
 
 An unbiased, outside perspective on the key pillars of product, tech, data, and enablement that produces a tailored roadmap to more profitable growth.
 
-This is often the starting point for a broader Prodyssey engagement, offering insight without a longer term commitment.
+This is often the starting point for a broader Prodyssey engagement, offering expert perspective before making a longer term commitment.

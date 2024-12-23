@@ -6,22 +6,24 @@ title: Posts
 <section class="py-16 bg-greek-pattern bg-opacity-5">
   <div class="container mx-auto px-4">
     <h1 class="text-4xl font-serif font-bold text-primary mb-4 text-center">
-      Prodyssey Insights from <i>The Journey</i>
+      Stories from <i>The Journey</i>
     </h1>
     <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-      Sharing what we're learning on Profitable SaaS Product, Tech, Data, AI, and Enablement.
+      Sharing what we're learning on Profitable SaaS Product, UX, Engineering, Data, AI, and Revenue Enablement.
     </p>
 
-    {% set emailSignup = { 
-      heading: "Sign up for more", 
-      subheading: "We'll keep you updated with the latest insights.", 
-      buttonText: "Subscribe" 
-    } %} 
+    {% set emailSignup = {
+      heading: "Sign up for more",
+      subheading: "We'll keep you updated with the latest as they're published.",
+      buttonText: "Subscribe"
+    } %}
     {% include "components/email-signup.njk" %}
 
     <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-      {% for post in collections.posts | reverse %} {% include
-      "components/blog-post-card.njk" %} {% endfor %}
+      {% for post in collections.posts | reverse %}
+        {% include
+      "components/blog-post-card.njk" %}
+      {% endfor %}
     </div>
   </div>
 </section>
