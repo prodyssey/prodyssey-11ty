@@ -1,6 +1,7 @@
 # Next
 
-- [ ] site indexing
+- [ ] double check site indexing
+- [ ] new logo and favicon
 - [ ] a couple more posts imported
 - [ ] Header items - include framework? rename posts?
 - [ ] featured posts on site index instead of latest
@@ -8,7 +9,6 @@
 - [ ] framework - problems it solves (?)
 - [ ] steal style watching from personal site
 - [ ] Color scheme finalized - eye on dark mode
-- [ ] favicon
 - [ ] Hero image / Logo on top left
 - [ ] buttondown styling to match color scheme
 - [ ] open graph tags
@@ -26,6 +26,8 @@
 
 # Completed
 
+- [x] fix sitemap dates
+- [x] site indexing
 - [x] remove "insights" as a term since I just slagged it
 - [x] product engine terminology and definition
 - [x] first pass "three bullets" on home page
