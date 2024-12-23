@@ -2,11 +2,11 @@
 
 - [ ] site indexing
 - [ ] a couple more posts imported
-- [ ] framework - problems it solves (?)
 - [ ] Header items - include framework? rename posts?
 - [ ] featured posts on site index instead of latest
 - [ ] images on posts and on index
-- [ ] featured posts on the top of site index above the email signup
+- [ ] framework - problems it solves (?)
+- [ ] steal style watching from personal site
 - [ ] Color scheme finalized - eye on dark mode
 - [ ] favicon
 - [ ] Hero image / Logo on top left
@@ -16,6 +16,7 @@
 - [ ] Dark mode support
 - [ ] process - working with us / how we work
 - [ ] blog post front matter - related services with links
+- [ ] featured posts on the top of site index above the email signup?
 - [ ] service pages - problems they solve, outcomes
 - [ ] don't show email signup if already subscribed
 - [ ] client logos
@@ -25,6 +26,10 @@
 
 # Completed
 
+- [x] remove "insights" as a term since I just slagged it
+- [x] product engine terminology and definition
+- [x] first pass "three bullets" on home page
+- [x] move story to about page after feedback
 - [x] analytics
 - [x] services page contact CTA
 - [x] intro edit
