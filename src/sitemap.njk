@@ -7,7 +7,11 @@ eleventyExcludeFromCollections: true
     {% for page in collections.all %}
         <url>
             <loc>{{ site.url }}{{ page.url | url }}</loc>
-            <lastmod>{{ page.inputPath | getFileDate(page) | dateFilter('yyyy-LL-dd') }}</lastmod>
+            <lastmod>
+                {% if page.data.publishedDate %}{{ page.data.publishedDate | dateFilter('yyyy-LL-dd') }}
+                {% else %}{{ page.date | dateFilter('yyyy-LL-dd') }}
+                {% endif %}
+            </lastmod>
         </url>
     {% endfor %}
 </urlset>
