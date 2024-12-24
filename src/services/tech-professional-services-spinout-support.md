@@ -5,6 +5,7 @@ description: Customize your product in a sustainable way.
 slug: tech-professional-services-spinout-support
 category: Activation
 order: 3
+date: 2024-12-24T18:49:26.696Z
 ---
 Most B2B SaaS companies end up building custom solutions for strategic customers. 
 

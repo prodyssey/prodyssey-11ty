@@ -6,6 +6,7 @@ description: Optimize your team structures with Team Topologies
 slug: leverage-with-less-team-topologies
 category: Planning
 order: 3
+date: 2024-12-24T18:49:40.365Z
 ---
 SaaS companies that grow profitably can't staff like venture backed rocketships and big tech companies.
 

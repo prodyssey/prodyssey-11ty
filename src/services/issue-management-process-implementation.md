@@ -5,6 +5,7 @@ description: Avoid getting bogged down with reactive firefighting.
 slug: issue-management-process-implementation
 category: Activation
 order: 1
+date: 2024-12-24T18:49:44.703Z
 ---
 Many SaaS companies end up in a spot where they struggle to manage issues that are impacting customers while making progress on strategic work.
 

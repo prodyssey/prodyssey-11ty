@@ -6,6 +6,7 @@ description: Identify your leading indicators for profitable growth.
 slug: north-star-metrics-leading-indicators-definition
 category: Visibility
 order: 4
+date: 2024-12-24T18:49:40.366Z
 ---
 Most companies measure success based on the balance sheet.
 

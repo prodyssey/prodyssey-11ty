@@ -4,6 +4,7 @@ title: Sell Side PTD Diligence
 description: Get a sense of what a potential suitor is going to see.
 category: Visibility
 order: 3
+date: 2024-12-24T18:49:26.694Z
 ---
 If you're entering into a phase where a transaction or a major growth investment is the best next step for your company, you want to make sure you're ready.
 

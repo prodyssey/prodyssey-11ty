@@ -5,9 +5,12 @@ description: Optimize Your Value Capture
 slug: pricing
 category: Go to Market (GTM) Enablement
 relatedServices:
-  - { title: "Positioning", slug: "positioning" }
-  - { title: "Packaging", slug: "packaging" }
+  - title: Positioning
+    slug: positioning
+  - title: Packaging
+    slug: packaging
 order: 3
+date: 2024-12-24T18:49:33.920Z
 ---
 SaaS Pricing is hard.
 

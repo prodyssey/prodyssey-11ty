@@ -5,9 +5,12 @@ description: Put the Right Things Together
 slug: packaging
 category: Go to Market (GTM) Enablement
 relatedServices:
-  - { title: "Pricing", slug: "pricing" }
-  - { title: "Positioning", slug: "positioning" }
+  - title: Pricing
+    slug: pricing
+  - title: Positioning
+    slug: positioning
 order: 2
+date: 2024-12-24T18:49:33.919Z
 ---
 Mature SaaS products have a lot of capabilities.
 

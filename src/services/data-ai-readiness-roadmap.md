@@ -5,6 +5,7 @@ description: Position your product for differentiation via AI
 slug: data-ai-readiness-roadmap
 category: Planning
 order: 2
+date: 2024-12-24T18:49:44.701Z
 ---
 Many companies are investing in integrating AI into their products.
 

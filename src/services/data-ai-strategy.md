@@ -5,6 +5,7 @@ description: Plan for profitable AI differentiation
 slug: data-ai-strategy
 category: Strategic Advisory
 order: 4
+date: 2024-12-24T18:49:44.702Z
 ---
 AI is a tidal wave that has the chance to change everything for SaaS companies.
 

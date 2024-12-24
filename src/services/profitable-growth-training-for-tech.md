@@ -5,6 +5,7 @@ description: Better Decisions Through Understanding the Business
 slug: profitable-growth-training-for-tech
 category: People
 order: 6
+date: 2024-12-24T18:49:26.690Z
 ---
 Most members of a product, tech, or data team are technical experts, but outside of a few exceptions, they don't have a strong understanding of how a profitably growing SaaS business works vs. other software powered companies that may have different strategies and goals.
 

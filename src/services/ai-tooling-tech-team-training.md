@@ -5,6 +5,7 @@ description: Help Your Team Develop AI Superpowers
 slug: ai-tooling-tech-team-training
 category: People
 order: 4
+date: 2024-12-24T18:50:08.875Z
 ---
 
 The AI powered product development future is here, it's just not evenly distributed yet.

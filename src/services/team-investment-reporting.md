@@ -5,6 +5,7 @@ description: Get visibility into the full picture of the work.
 slug: team-investment-reporting
 category: Visibility
 order: 2
+date: 2024-12-24T18:49:26.695Z
 ---
 Roadmaps mostly show the plan for what you want your product to be.
 

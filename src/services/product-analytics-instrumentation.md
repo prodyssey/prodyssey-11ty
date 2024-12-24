@@ -1,10 +1,11 @@
 ---
 layout: layouts/service.njk
 title: Product Analytics Instrumentation
-description: Understand How Your Product is Actually Used 
+description: Understand How Your Product is Actually Used
 slug: product-analytics-instrumentation
 category: Activation
 order: 6
+date: 2024-12-24T18:49:33.920Z
 ---
 Many SaaS companies have either poorly implemented product analytics or none at all.
 

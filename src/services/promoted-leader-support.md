@@ -5,6 +5,7 @@ description: Support and Grow Your Best Talent
 slug: promoted-leader-support
 category: People
 order: 3
+date: 2024-12-24T18:49:26.693Z
 ---
 SaaS companies often have people on staff with great leadership potential, but becoming a great product, engineering, or data leader is hard.
 

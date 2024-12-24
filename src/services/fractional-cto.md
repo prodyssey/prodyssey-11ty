@@ -1,10 +1,11 @@
 ---
 layout: layouts/service.njk
 title: Fractional CTO
-description: Experienced, Part-Time Technology Leadership
+description: 'Experienced, Part-Time Technology Leadership'
 slug: fractional-cto
 category: People
 order: 7
+date: 2024-12-24T18:49:44.702Z
 ---
 You would benefit from having a seasoned technology leader on your team, but it doesn't make sense to make the commitment to a full-time CTO.
 

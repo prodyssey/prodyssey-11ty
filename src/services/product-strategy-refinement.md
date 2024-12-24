@@ -5,6 +5,7 @@ description: Clarify Your Focus and Points of Leverage
 slug: product-strategy-refinement
 category: Strategic Advisory
 order: 2
+date: 2024-12-24T18:49:33.920Z
 ---
 Good product strategy is clear. It helps everyone understand what you are focusing on to gain leverage in the market. 
 

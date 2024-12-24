@@ -5,6 +5,7 @@ description: Align Your Team
 slug: executive-team-facilitation
 category: Strategic Advisory
 order: 1
+date: 2024-12-24T18:49:44.702Z
 ---
 Keeping everyone aligned on a SaaS executive team is hard.
 

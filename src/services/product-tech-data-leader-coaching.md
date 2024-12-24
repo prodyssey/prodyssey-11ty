@@ -5,6 +5,7 @@ description: Help Your Leaders Grow
 slug: product-tech-data-leader-coaching
 category: People
 order: 4
+date: 2024-12-24T18:49:33.921Z
 ---
 Michael Jordan had a coach. Why shouldn't your key leaders?
 

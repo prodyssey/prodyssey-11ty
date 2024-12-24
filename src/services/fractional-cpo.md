@@ -5,6 +5,7 @@ description: Experienced Product Leadership
 slug: fractional-cpo
 category: People
 order: 8
+date: 2024-12-24T18:49:44.702Z
 ---
 You would benefit from having a seasoned, multi product portfolio leader on your team, but it doesn't make sense to make the commitment to a full-time CPO.
 

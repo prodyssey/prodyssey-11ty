@@ -2,10 +2,13 @@
 layout: layouts/service.njk
 title: Helios Diagnostic - Prodyssey Framework 360 degree view
 altTitle: Helios Diagnostic
-description: A 360 degree evaluation of your product's performance and profitable potential.
+description: >-
+  A 360 degree evaluation of your product's performance and profitable
+  potential.
 slug: helios-prodyssey-framework-360-degree-view
 category: Visibility
 order: 1
+date: 2024-12-24T18:49:44.703Z
 ---
 
 In Greek Mythology, Helios sees everything.

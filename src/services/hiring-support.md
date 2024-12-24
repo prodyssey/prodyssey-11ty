@@ -1,12 +1,14 @@
 ---
 layout: layouts/service.njk
 title: Hiring Support
-description: Confidently Identify, Evaluate, and Hire Key Talent
+description: 'Confidently Identify, Evaluate, and Hire Key Talent'
 slug: hiring-support
 category: People
 relatedServices:
-  - { title: Bridge New Leader, slug: bridge-new-leader }
+  - title: Bridge New Leader
+    slug: bridge-new-leader
 order: 1
+date: 2024-12-24T18:49:44.703Z
 ---
 Hiring the wrong fit for key positions in product, tech, and data are a huge risk to any SaaS company.
 

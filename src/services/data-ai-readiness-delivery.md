@@ -5,6 +5,7 @@ description: Execute your data and AI readiness plan.
 slug: data-ai-readiness-delivery
 category: Activation
 order: 5
+date: 2024-12-24T18:49:44.701Z
 ---
 Good data engineering is hard to find right now.
 

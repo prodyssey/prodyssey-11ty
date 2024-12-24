@@ -5,6 +5,7 @@ description: Help Your Sales Team Sell Without Promises
 slug: sell-whats-on-the-truck-enablement
 category: Go to Market (GTM) Enablement
 order: 1
+date: 2024-12-24T18:49:26.694Z
 ---
 It's a common way SaaS companies grow: identify a key target customer, and then agree to build whatever they need to get them to buy.
 

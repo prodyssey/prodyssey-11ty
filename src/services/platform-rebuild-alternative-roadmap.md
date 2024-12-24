@@ -1,10 +1,11 @@
 ---
 layout: layouts/service.njk
 title: Platform Rebuild Alternative Roadmap
-description: Don't rebuild, evolve.
+description: 'Don''t rebuild, evolve.'
 slug: platform-rebuild-alternative-roadmap
 category: Planning
 order: 5
+date: 2024-12-24T18:49:33.919Z
 ---
 Many technical folks who have never tried to rebuild a revenue producing product from scratch think the solution to "technical debt" is to start over. It has to be easier than fixing what's broken, right?
 

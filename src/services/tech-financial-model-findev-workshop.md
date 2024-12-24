@@ -5,6 +5,7 @@ description: Be able to predict your infrastructure costs just like you do headc
 slug: tech-financial-model-findev-workshop
 category: Visibility
 order: 6
+date: 2024-12-24T18:49:26.695Z
 ---
 SaaS companies often struggle to predict infrastructure costs, especially when developing on top of cloud providers.
 

@@ -5,6 +5,7 @@ description: Get help to implement and optimize continuous delivery practices.
 slug: continuous-delivery-activation-ci-cd
 category: Activation
 order: 4
+date: 2024-12-24T18:50:08.876Z
 ---
 If you're not delivering product as soon as it's ready, the best investment you can make in success is making the changes needed to start doing that.
 

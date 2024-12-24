@@ -5,6 +5,7 @@ description: Differentiate Your Offerings
 slug: positioning
 category: Go to Market (GTM) Enablement
 order: 4
+date: 2024-12-24T18:49:33.920Z
 ---
 Positioning is the key building block of a differentiated, sellable SaaS offering.
 

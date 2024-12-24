@@ -5,6 +5,7 @@ description: Refine a plan from where you are to the profitable growth benchmark
 slug: rule-of-40-roadmap
 category: Planning
 order: 1
+date: 2024-12-24T18:49:26.693Z
 ---
 If your combined growth rate and EBITDA margin are 40% or higher, you're probably not reading this page.
 

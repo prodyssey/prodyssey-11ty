@@ -5,6 +5,7 @@ description: Get to clarity on the gnarliest critical parts of your tech stack.
 slug: tech-teardown
 category: Visibility
 order: 5
+date: 2024-12-24T18:49:26.697Z
 ---
 Over time, SaaS companies tend to accumulate key systems that are critical to the operation of the business.
 
