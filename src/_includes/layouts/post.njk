@@ -4,11 +4,16 @@ layout: layouts/base.njk
 
 <article class="py-16 bg-circuit-pattern bg-opacity-5">
   <div class="container mx-auto px-4 max-w-4xl">
+    {% if image %}
+      <img src="{{ image }}" alt="{{ title }}" class="w-full h-auto mb-8 rounded-lg shadow-lg">
+    {% endif %}
     <h1 class="text-4xl font-serif font-bold text-primary mb-4">{{ title }}</h1>
     <p class="text-text mb-8">
-            Published on {{ date | dateFilter }}
+      {% if publishedDate %}
+        Published on {{ publishedDate | dateFilter('LLL dd, yyyy') }}
+      {% endif %}
       {% if author %}
-            by {{ author }}
+        by {{ author }}
       {% endif %}
     </p>
     <div class="prose max-w-prose space-y-4">

@@ -78,6 +78,7 @@ module.exports = function (eleventyConfig) {
 
   // Copy `src/assets` to `_site/assets`
   eleventyConfig.addPassthroughCopy("src/assets/images/*");
+  eleventyConfig.addPassthroughCopy("src/assets/page-images/*");
 
   // Set custom directories for input, output, includes, and data
   return {
