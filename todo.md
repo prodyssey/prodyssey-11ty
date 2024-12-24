@@ -1,9 +1,10 @@
 # Next
 
 - [ ] double check site indexing
-- [ ] new logo and favicon
+- [ ] adjust logo manually
+- [ ] favicon from adjusted logo
+- [ ] hand drawn svg what how why icons
 - [ ] a couple more posts imported
-- [ ] Header items - include framework? rename posts?
 - [ ] featured posts on site index instead of latest
 - [ ] images on posts and on index
 - [ ] framework - problems it solves (?)
@@ -26,6 +27,9 @@
 
 # Completed
 
+- [x] conditionalpublished date on posts, in sitemap
+- [x] Header items - include framework, rename posts to the journey
+- [x] new logo
 - [x] fix sitemap dates
 - [x] site indexing
 - [x] remove "insights" as a term since I just slagged it
