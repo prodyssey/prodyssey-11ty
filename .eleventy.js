@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const fs = require("fs");
 
 module.exports = function (eleventyConfig) {
   // Determine if we're in production based on Netlify's environment variable
@@ -57,6 +58,22 @@ module.exports = function (eleventyConfig) {
       (service) =>
         service.data.category.toLowerCase() === category.toLowerCase()
     );
+  });
+
+  eleventyConfig.addFilter("getFileDate", function (path, page) {
+    // Check for date in front matter first
+    if (page.data.date) {
+      return page.data.date;
+    }
+
+    // Fall back to file modified date
+    try {
+      const stats = fs.statSync(path);
+      return stats.mtime;
+    } catch (e) {
+      console.error(`Error getting file date for ${path}:`, e);
+      return new Date();
+    }
   });
 
   // Copy `src/assets` to `_site/assets`
