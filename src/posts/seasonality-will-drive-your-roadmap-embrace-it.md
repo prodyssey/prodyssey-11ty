@@ -1,12 +1,15 @@
 ---
 layout: layouts/post.njk
-title: "Seasonality Will Drive Your Roadmap"
-description: "Embrace it."
-author: "Craig Sturgis"
-date: 2024-07-31
-# image: /assets/images/blog/saas-growth-plateau.jpg
-tags: ["Product Strategy", "Go To Market (GTM) Enablement"]
-conversationUrl: https://www.linkedin.com/posts/craigsturgis_seasonality-will-drive-your-roadmap-so-embrace-activity-7224493317210652672-cjxD?utm_source=share&utm_medium=member_desktop
+title: Seasonality Will Drive Your Roadmap
+description: Embrace it.
+author: Craig Sturgis
+date: 2024-12-27T20:59:24.221Z
+publishedDate: 2024-07-31T00:00:00.000Z
+tags:
+  - Product Strategy
+  - Go To Market (GTM) Enablement
+conversationUrl: >-
+  https://www.linkedin.com/posts/craigsturgis_seasonality-will-drive-your-roadmap-so-embrace-activity-7224493317210652672-cjxD?utm_source=share&utm_medium=member_desktop
 ---
 
 One of the biggest mistakes I've made in the past and see all the time consulting is roadmap planning without putting seasonality front and center.
