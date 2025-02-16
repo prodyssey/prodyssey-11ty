@@ -1,10 +1,11 @@
 ---
 layout: layouts/post.njk
-title: Book Report: Product Operations by Melissa Perri and Denise Tilles
+title: Book Report - Product Operations by Melissa Perri and Denise Tilles
 description: >-
-  Reflections on reading the book and how it aligns and provides suggestions for good day to day operations on software product teams
+  Reflections on reading the book and how it aligns and provides suggestions for
+  good day to day operations on software product teams
 author: Craig Sturgis
-date: 2025-02-16T21:13:37.703Z
+date: 2025-02-16T21:18:57.720Z
 publishedDate: 2024-01-29T17:10:13.000Z
 image: null
 tags:
