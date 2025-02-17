@@ -1,7 +1,7 @@
 # Next
 
 - [ ] double check site indexing
-- [ ] adjust logo manually
+
 - [ ] favicon from adjusted logo
 - [ ] hand drawn svg what how why icons
 - [ ] a couple more posts imported
@@ -27,6 +27,8 @@
 
 # Completed
 
+- [x] adjust logo manually
+- [x] make sure all posts have the right images.
 - [x] conditionalpublished date on posts, in sitemap
 - [x] Header items - include framework, rename posts to the journey
 - [x] new logo

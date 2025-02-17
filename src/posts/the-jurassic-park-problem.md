@@ -8,7 +8,7 @@ description: >-
 author: Craig Sturgis
 date: 2025-02-16T21:25:02.529Z
 publishedDate: 2023-12-05T15:37:05.000Z
-image: null
+image: /assets/page-images/life-finds-a-way.gif
 tags:
   - Product Team Coaching
 conversationUrl: >-

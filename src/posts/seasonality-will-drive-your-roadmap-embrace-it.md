@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: Seasonality Will Drive Your Roadmap
 description: Embrace it.
 author: Craig Sturgis
-date: 2024-12-27T20:59:24.221Z
+date: 2025-02-16T22:58:45.637Z
 publishedDate: 2024-07-31T00:00:00.000Z
 tags:
   - Product Strategy

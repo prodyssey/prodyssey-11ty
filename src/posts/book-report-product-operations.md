@@ -7,7 +7,7 @@ description: >-
 author: Craig Sturgis
 date: 2025-02-16T21:18:57.720Z
 publishedDate: 2024-01-29T17:10:13.000Z
-image: null
+image: /assets/page-images/product-operations-book.jpeg
 tags:
   - Product Operations
   - Product Team Coaching
