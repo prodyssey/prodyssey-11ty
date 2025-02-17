@@ -7,7 +7,7 @@ description: >-
 author: Craig Sturgis
 date: 2025-02-16T20:39:42.069Z
 publishedDate: 2024-05-22T11:32:53.000Z
-image: null
+image: /assets/page-images/factory-family-farm.jpeg
 tags:
   - Product Team Coaching
 conversationUrl: >-

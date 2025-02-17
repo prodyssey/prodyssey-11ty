@@ -1,5 +1,6 @@
 # Next
 
+- [ ] make sure all posts have the right images.
 - [ ] double check site indexing
 - [ ] adjust logo manually
 - [ ] favicon from adjusted logo

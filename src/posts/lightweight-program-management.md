@@ -7,7 +7,7 @@ description: >-
 author: Craig Sturgis
 date: 2025-02-16T21:20:40.420Z
 publishedDate: 2023-12-13T14:18:52.000Z
-image: null
+image: /assets/page-images/thinking-dot-gif.gif
 tags:
   - Program Management
   - Team Effectiveness
