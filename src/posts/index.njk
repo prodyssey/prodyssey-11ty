@@ -20,7 +20,7 @@ title: Posts
     {% include "components/email-signup.njk" %}
 
     <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-      {% for post in collections.posts | reverse %}
+      {% for post in collections.posts | sort(false, false, 'data.publishedDate') | reverse %}
         {% include
       "components/blog-post-card.njk" %}
       {% endfor %}
