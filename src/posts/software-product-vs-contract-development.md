@@ -7,6 +7,7 @@ description: >-
 author: Craig Sturgis
 date: 2025-02-16T20:54:57.157Z
 publishedDate: 2024-03-13T12:13:46.000Z
+featured: true
 image: null
 tags:
   - Product Development

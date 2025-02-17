@@ -129,7 +129,7 @@ include "components/email-signup.njk" %}
       <a href="/posts" class="hover:underline">Featured Posts</a>
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {% for post in collections.posts | reverse | limit(4) %}
+      {% for post in collections.posts | filterByFeatured | sort(false, false, 'data.publishedDate') | reverse | limit(4) %}
         {% include
       "components/blog-post-card.njk" %}
       {% endfor %}
