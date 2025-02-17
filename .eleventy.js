@@ -60,6 +60,10 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addFilter("filterByFeatured", function (posts) {
+    return posts.filter((post) => post.data.featured === true);
+  });
+
   eleventyConfig.addFilter("getFileDate", function (path, page) {
     // Check for date in front matter first
     if (page.data.date) {
