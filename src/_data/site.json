@@ -1,10 +1,11 @@
 {
-    "name": "Prodyssey",
-    "url": "https://www.prodyssey.com",
-    "author": "Craig Sturgis",
-    "email": "craig@prodyssey.com",
-    "social": {
-      "twitter": "prodyssey",
-      "linkedin": "prodyssey"
-    }
-  }
+  "name": "Prodyssey",
+  "url": "https://www.prodyssey.com",
+  "author": "Craig Sturgis",
+  "email": "craig@prodyssey.com",
+  "social": {
+    "twitter": "prodyssey",
+    "linkedin": "prodyssey"
+  },
+  "currentYear": 2025
+}
