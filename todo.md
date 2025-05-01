@@ -1,11 +1,6 @@
 # Next
 
-- [ ] double check site indexing
-
 - [ ] favicon from adjusted logo
-- [ ] hand drawn svg what how why icons
-- [ ] a couple more posts imported
-- [ ] featured posts on site index instead of latest
 - [ ] images on posts and on index
 - [ ] framework - problems it solves (?)
 - [ ] steal style watching from personal site
@@ -24,9 +19,13 @@
 - [ ] blog posts - key posts from linkedin
 - [ ] packages
 - [ ] pricing?
+- [ ] hand drawn svg what how why icons
 
 # Completed
 
+- [x] double check site indexing
+- [x] a couple more posts imported
+- [x] featured posts on site index instead of latest
 - [x] adjust logo manually
 - [x] make sure all posts have the right images.
 - [x] conditionalpublished date on posts, in sitemap
