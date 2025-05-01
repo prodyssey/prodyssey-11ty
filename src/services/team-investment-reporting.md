@@ -5,10 +5,14 @@ description: Get visibility into the full picture of the work.
 slug: team-investment-reporting
 category: Visibility
 order: 2
-date: 2024-12-24T18:49:26.695Z
+image: /assets/page-images/team-investment-report.png
+date: 2025-05-01T13:21:42.355Z
 ---
-Roadmaps mostly show the plan for what you want your product to be.
+
+Roadmaps show the plan for what you want your product to be.
 
 Team investment reporting shows the actual work being done, and its impact on the product and the roadmap.
 
-We will work with your team to visualize the reality of what's happening so everyone can make decisions with more clarity.
+Being able to orient where you are and where you've been is the bedrock of successful planning and tactical execution.
+
+Prodyssey will work with your team to visualize the reality of what's happening so everyone can make decisions with more clarity.

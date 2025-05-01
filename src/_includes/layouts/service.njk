@@ -8,36 +8,44 @@ layout: layouts/base.njk
             <h1 class="text-3xl md:text-4xl font-serif font-bold text-primary">
                 {{ altTitle or title }}
             </h1>
-            
+
             {% if description %}
-            <p class="text-lg md:text-xl mt-4 text-gray-700">{{ description }}</p>
+                <p class="text-lg md:text-xl mt-4 text-gray-700">{{ description }}</p>
             {% endif %}
         </header>
-        
+
+        {% if image %}
+            <div class="mb-8 md:mb-12">
+                <img src="{{ image }}" alt="{{ altTitle or title }}" class="w-full h-auto rounded-lg shadow-md object-cover" style="max-height: 400px;">
+            </div>
+        {% endif %}
+
         <div class="prose prose-lg max-w-none mb-12 space-y-6">
             {{ content | safe }}
         </div>
-        
+
         <div class="grid gap-8 md:grid-cols-2 mb-12">
             {% if category %}
-            <div>
-                <h2 class="text-xl md:text-2xl font-serif font-bold text-secondary mb-2">Category</h2>
-                <p class="text-gray-700">{{ category }}</p>
-            </div>
+                <div>
+                    <h2 class="text-xl md:text-2xl font-serif font-bold text-secondary mb-2">Category</h2>
+                    <p class="text-gray-700">{{ category }}</p>
+                </div>
             {% endif %}
-            
+
             {% if relatedServices %}
-            <div>
-                <h2 class="text-xl md:text-2xl font-serif font-bold text-secondary mb-2">Related Services</h2>
-                <ul class="list-disc list-inside text-accent">
-                    {% for service in relatedServices %}
-                    <li><a href="/services/{{ service.slug }}" class="hover:underline">{{ service.title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
+                <div>
+                    <h2 class="text-xl md:text-2xl font-serif font-bold text-secondary mb-2">Related Services</h2>
+                    <ul class="list-disc list-inside text-accent">
+                        {% for service in relatedServices %}
+                            <li>
+                                <a href="/services/{{ service.slug }}" class="hover:underline">{{ service.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             {% endif %}
         </div>
-        
+
         <div class="text-center">
             <a href="/contact" class="inline-block bg-accent text-white px-6 py-3 rounded-full hover:bg-secondary transition duration-300 text-lg">Let's Talk About This</a>
         </div>
