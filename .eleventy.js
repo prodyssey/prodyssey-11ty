@@ -84,6 +84,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/images/*");
   eleventyConfig.addPassthroughCopy("src/assets/page-images/*");
 
+  // Add GA4 ID to global data
+  eleventyConfig.addGlobalData("ga4Id", process.env.GA4_ID || "");
+
   // Set custom directories for input, output, includes, and data
   return {
     dir: {
@@ -100,6 +103,4 @@ module.exports = function (eleventyConfig) {
     dataTemplateEngine: "njk",
   };
 
-  // Add GA4 ID to global data
-  eleventyConfig.addGlobalData("ga4Id", process.env.GA4_ID || "");
 };
