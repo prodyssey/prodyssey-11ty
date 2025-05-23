@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Cache node_modules between builds
+[build.cache]
+  node_modules = "node_modules"
+
+# Redirect rules for optimized images (optional fallback)
+[[redirects]]
+  from = "/assets/images/optimized/*"
+  to = "/assets/images/optimized/:splat"
+  status = 200 

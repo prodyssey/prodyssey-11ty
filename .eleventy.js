@@ -24,30 +24,36 @@ async function imageShortcode(
     fullSrc = path.join("src", src);
   }
 
-  let metadata = await Image(fullSrc, {
-    widths: [400, 800, 1200],
-    formats: ["avif", "webp", "jpeg"],
-    outputDir: "_site/assets/images/optimized/",
-    urlPath: "/assets/images/optimized/",
-    filenameFormat: function (id, src, width, format, options) {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension);
-      return `${name}-${width}w.${format}`;
-    },
-  });
+  try {
+    let metadata = await Image(fullSrc, {
+      widths: [400, 800, 1200],
+      formats: ["avif", "webp", "jpeg"],
+      outputDir: "_site/assets/images/optimized/",
+      urlPath: "/assets/images/optimized/",
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension);
+        return `${name}-${width}w.${format}`;
+      },
+    });
 
-  let imageAttributes = {
-    alt,
-    sizes,
-    loading,
-    decoding: "async",
-  };
+    let imageAttributes = {
+      alt,
+      sizes,
+      loading,
+      decoding: "async",
+    };
 
-  if (className) {
-    imageAttributes.class = className;
+    if (className) {
+      imageAttributes.class = className;
+    }
+
+    return Image.generateHTML(metadata, imageAttributes);
+  } catch (error) {
+    console.error(`Error processing image ${src}:`, error);
+    // Fallback to regular img tag if optimization fails
+    return `<img src="${src}" alt="${alt}" class="${className}" loading="${loading}">`;
   }
-
-  return Image.generateHTML(metadata, imageAttributes);
 }
 
 // Add a specialized shortcode for headshots with smaller sizes
@@ -60,30 +66,36 @@ async function headshotShortcode(
 ) {
   const fullSrc = path.join("src", src);
 
-  let metadata = await Image(fullSrc, {
-    widths: [192, 384, 768],
-    formats: ["avif", "webp", "jpeg"],
-    outputDir: "_site/assets/images/optimized/",
-    urlPath: "/assets/images/optimized/",
-    filenameFormat: function (id, src, width, format, options) {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension);
-      return `${name}-${width}w.${format}`;
-    },
-  });
+  try {
+    let metadata = await Image(fullSrc, {
+      widths: [192, 384, 768],
+      formats: ["avif", "webp", "jpeg"],
+      outputDir: "_site/assets/images/optimized/",
+      urlPath: "/assets/images/optimized/",
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension);
+        return `${name}-${width}w.${format}`;
+      },
+    });
 
-  let imageAttributes = {
-    alt,
-    sizes,
-    loading,
-    decoding: "async",
-  };
+    let imageAttributes = {
+      alt,
+      sizes,
+      loading,
+      decoding: "async",
+    };
 
-  if (className) {
-    imageAttributes.class = className;
+    if (className) {
+      imageAttributes.class = className;
+    }
+
+    return Image.generateHTML(metadata, imageAttributes);
+  } catch (error) {
+    console.error(`Error processing headshot ${src}:`, error);
+    // Fallback to regular img tag if optimization fails
+    return `<img src="${src}" alt="${alt}" class="${className}" loading="${loading}">`;
   }
-
-  return Image.generateHTML(metadata, imageAttributes);
 }
 
 module.exports = function (eleventyConfig) {

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"eleventy --serve\" \"tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/styles.css --watch\" \"node scripts/watch-md.js\"",
-    "build": "eleventy & tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/styles.css --minify",
+    "build": "eleventy && tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/styles.css --minify",
     "optimize-images": "echo 'To manually optimize original images, install ImageMagick and use: magick src/assets/images/craig-sturgis.webp -quality 75 -resize 768x768 src/assets/images/craig-sturgis-optimized.webp'"
   },
   "keywords": [],
