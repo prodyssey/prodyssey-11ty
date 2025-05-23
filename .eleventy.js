@@ -1,5 +1,90 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
+const Image = require("@11ty/eleventy-img");
+const path = require("path");
+
+async function imageShortcode(
+  src,
+  alt,
+  sizes = "100vw",
+  loading = "lazy",
+  className = ""
+) {
+  let fullSrc;
+
+  // Handle different src formats
+  if (src.startsWith("/")) {
+    // Absolute path from site root
+    fullSrc = path.join("src", src.substring(1));
+  } else if (src.startsWith("assets/")) {
+    // Relative path starting with assets
+    fullSrc = path.join("src", src);
+  } else {
+    // Assume it's relative to src
+    fullSrc = path.join("src", src);
+  }
+
+  let metadata = await Image(fullSrc, {
+    widths: [400, 800, 1200],
+    formats: ["avif", "webp", "jpeg"],
+    outputDir: "_site/assets/images/optimized/",
+    urlPath: "/assets/images/optimized/",
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+      return `${name}-${width}w.${format}`;
+    },
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading,
+    decoding: "async",
+  };
+
+  if (className) {
+    imageAttributes.class = className;
+  }
+
+  return Image.generateHTML(metadata, imageAttributes);
+}
+
+// Add a specialized shortcode for headshots with smaller sizes
+async function headshotShortcode(
+  src,
+  alt,
+  sizes = "192px",
+  loading = "lazy",
+  className = ""
+) {
+  const fullSrc = path.join("src", src);
+
+  let metadata = await Image(fullSrc, {
+    widths: [192, 384, 768],
+    formats: ["avif", "webp", "jpeg"],
+    outputDir: "_site/assets/images/optimized/",
+    urlPath: "/assets/images/optimized/",
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+      return `${name}-${width}w.${format}`;
+    },
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading,
+    decoding: "async",
+  };
+
+  if (className) {
+    imageAttributes.class = className;
+  }
+
+  return Image.generateHTML(metadata, imageAttributes);
+}
 
 module.exports = function (eleventyConfig) {
   // Determine if we're in production based on Netlify's environment variable
@@ -89,6 +174,10 @@ module.exports = function (eleventyConfig) {
 
   // Add GA4 ID to global data
   eleventyConfig.addGlobalData("ga4Id", process.env.GA4_ID || "");
+
+  // Add the image shortcode
+  eleventyConfig.addAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addAsyncShortcode("headshot", headshotShortcode);
 
   // Set custom directories for input, output, includes, and data
   return {
