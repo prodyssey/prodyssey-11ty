@@ -83,6 +83,9 @@ module.exports = function (eleventyConfig) {
   // Copy `src/assets` to `_site/assets`
   eleventyConfig.addPassthroughCopy("src/assets/images/*");
   eleventyConfig.addPassthroughCopy("src/assets/page-images/*");
+  eleventyConfig.addPassthroughCopy({
+    "src/assets/favicons/*": ".",
+  });
 
   // Add GA4 ID to global data
   eleventyConfig.addGlobalData("ga4Id", process.env.GA4_ID || "");
@@ -102,5 +105,4 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
   };
-
 };
