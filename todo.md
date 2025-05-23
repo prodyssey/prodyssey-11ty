@@ -1,28 +1,33 @@
 # Next
 
-- [ ] favicon from adjusted logo
+- [ ] osborne testimonial
+- [ ] rod testimonial
+- [ ] John testimonial?
+- [ ] Jason testimonial?
+- [ ] tyner testimonial
+
+- [ ] client logos
 - [ ] images on posts and on index
+- [ ] client logos
 - [ ] framework - problems it solves (?)
 - [ ] steal style watching from personal site
 - [ ] Color scheme finalized - eye on dark mode
 - [ ] Hero image / Logo on top left
 - [ ] buttondown styling to match color scheme
 - [ ] open graph tags
-- [ ] testimonials
 - [ ] Dark mode support
 - [ ] process - working with us / how we work
 - [ ] blog post front matter - related services with links
 - [ ] featured posts on the top of site index above the email signup?
 - [ ] service pages - problems they solve, outcomes
 - [ ] don't show email signup if already subscribed
-- [ ] client logos
 - [ ] blog posts - key posts from linkedin
-- [ ] packages
 - [ ] pricing?
-- [ ] hand drawn svg what how why icons
 
 # Completed
 
+- [x] packages
+- [x] favicon from adjusted logo
 - [x] double check site indexing
 - [x] a couple more posts imported
 - [x] featured posts on site index instead of latest
