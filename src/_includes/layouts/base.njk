@@ -12,6 +12,14 @@
             <!-- ENV: DEVELOPMENT -->
         {% endif %}
 
+        <!-- Preconnect to Google Fonts for faster loading -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- Preload critical fonts for immediate download -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap"></noscript>
+
         {% if isProd %}
             <!-- Google Analytics 4 (production only) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYH51VNXYM"></script>
@@ -27,7 +35,6 @@
 
         {% include "components/seo.njk" %}
         <link rel="stylesheet" href="/assets/css/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
         <link rel="shortcut icon" href="/favicon.ico"/>
