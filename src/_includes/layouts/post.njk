@@ -5,7 +5,7 @@ layout: layouts/base.njk
 <article class="py-16 bg-circuit-pattern bg-opacity-5">
   <div class="container mx-auto px-4 max-w-4xl">
     {% if image %}
-      <img src="{{ image }}" alt="{{ title }}" class="w-full h-auto mb-8 rounded-lg shadow-lg">
+      {% image image, title, "(min-width: 768px) 800px, 100vw", "eager", "w-full h-auto mb-8 rounded-lg shadow-lg" %}
     {% endif %}
     <h1 class="text-4xl font-serif font-bold text-primary mb-4">{{ title }}</h1>
     <p class="text-text mb-8">
