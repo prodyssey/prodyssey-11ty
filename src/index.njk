@@ -38,7 +38,47 @@ image: /assets/images/home-og-image.png
   </div>
 </section>
 
-{% include "components/svg-divider.njk" %}
+<section class="py-16 px-4 bg-gray-50">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="text-3xl font-serif font-bold text-primary text-center mb-12">
+      Testimonials
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <div class="flex flex-col items-center text-center space-y-6">
+          <div class="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+            {% headshot "assets/images/Michael-Osborne-2023.webp", "Michael Osborne", "80px", "lazy", "w-full h-full object-cover" %}
+          </div>
+          <blockquote class="text-gray-700 text-lg leading-relaxed">
+            "Grasps the entirety of a complex problem instantly. High compute speed and quick collation of the facts and challenges. Can get to the distilled core of an issue quickly."
+          </blockquote>
+          <div class="text-center">
+            <div class="font-serif font-bold text-primary text-lg">Michael Osborne</div>
+            <div class="text-gray-600">CEO, Appriss Retail</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <div class="flex flex-col items-center text-center space-y-6">
+          <div class="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+            {% headshot "assets/images/John-Cohen.jpeg", "John Cohen", "80px", "lazy", "w-full h-full object-cover" %}
+          </div>
+          <blockquote class="text-gray-700 text-lg leading-relaxed">
+            "Craig played a key role in retooling several of our core SaaS processes, from improving product stability to refining team workflows. His ability to balance technical progress with team coaching and documentation has continued to make a lasting impact on our operations."
+          </blockquote>
+          <div class="text-center">
+            <div class="font-serif font-bold text-primary text-lg">John Cohen</div>
+            <div class="text-gray-600">Founder and President, Total Party Planner</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="py-16 px-4">
   <div class="container mx-auto">
@@ -131,11 +171,11 @@ include "components/email-signup.njk" %}
   <div class="container mx-auto">
     <a href="/services">
       <h2 class="text-3xl font-serif font-bold text-primary mb-8 text-center">
-        Services
+        View Services
       </h2>
     </a>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {# <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       {% for pillar in collections.servicePillars | sort(attribute = 'data.order')
  %}
 
@@ -181,6 +221,6 @@ include "components/email-signup.njk" %}
         >
         </div>
       {% endfor %}
-    </div>
+    </div> #}
   </div>
 </section>
