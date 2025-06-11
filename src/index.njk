@@ -171,11 +171,11 @@ include "components/email-signup.njk" %}
   <div class="container mx-auto">
     <a href="/services">
       <h2 class="text-3xl font-serif font-bold text-primary mb-8 text-center">
-        Services
+        View Services
       </h2>
     </a>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {# <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       {% for pillar in collections.servicePillars | sort(attribute = 'data.order')
  %}
 
@@ -221,6 +221,6 @@ include "components/email-signup.njk" %}
         >
         </div>
       {% endfor %}
-    </div>
+    </div> #}
   </div>
 </section>
