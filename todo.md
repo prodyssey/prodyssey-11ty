@@ -1,11 +1,7 @@
 # Next
 
-- [ ] osborne testimonial
-- [ ] rod testimonial
-- [ ] John testimonial?
-- [ ] Jason testimonial?
-- [ ] tyner testimonial
-
+- [ ] 2 case studies
+- [ ] "10 problems"
 - [ ] client logos
 - [ ] images on posts and on index
 - [ ] client logos
@@ -21,11 +17,15 @@
 - [ ] featured posts on the top of site index above the email signup?
 - [ ] service pages - problems they solve, outcomes
 - [ ] don't show email signup if already subscribed
-- [ ] blog posts - key posts from linkedin
-- [ ] pricing?
+
+- [ ] pricing - linkedinguys inspiration
 
 # Completed
 
+- [x] blog posts - key posts from linkedin
+- [x] embedded scheduling w/ fallback
+- [x] osborne testimonial
+- [x] John testimonial?
 - [x] packages
 - [x] favicon from adjusted logo
 - [x] double check site indexing
