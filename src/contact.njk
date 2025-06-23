@@ -7,37 +7,83 @@ title: Contact Us
     <div class="container mx-auto px-4">
         <h1 class="text-4xl font-serif font-bold text-primary mb-8 text-center">Contact Us</h1>
         <p class="text-xl mb-12 text-center">Ready to talk? Let's go!</p>
-        
-        <form class="max-w-lg mx-auto" name="contact" netlify>
-            <div class="mb-6">
-                <label for="name" class="block text-text mb-2">Name</label>
-                <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
-            </div>
-            <div class="mb-6">
-                <label for="email" class="block text-text mb-2">Email</label>
-                <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
-            </div>
-            <div class="mb-6">
-                <label for="phone" class="block text-text mb-2">Phone (optional)</label>
-                <input type="text" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
-            </div>
-            <div class="mb-6">
-                <label for="problem" class="block text-text mb-2">Your Biggest Problem?</label>
-                <textarea id="problem" name="problem" rows="3" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
-            </div>
-            <div class="mb-6">
-                <label for="contact-preference" class="block text-text mb-2">How do you want to be contacted?</label>
-                <select id="contact-preference" name="contact-preference" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
-                    <option value="email">Email</option>
-                    <option value="text">Text</option>
-                    <option value="phone">Phone</option>
-                </select>
-            </div>
-            <div class="mb-6">
-                <label for="message" class="block text-text mb-2">Is there something else?</label>
-                <textarea id="message" name="message" rows="5" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
-            </div>
-            <button type="submit" class="w-full bg-accent text-white px-6 py-3 rounded-full hover:bg-secondary transition duration-300">Send Message</button>
-        </form>
+        <div id="booking-page">
+            <!-- this is where we will inject the interface -->
+        </div>
+
+        <!-- Fallback form - hidden by default -->
+        <div id="fallback-form" style="display: none;">
+            <p class="text-center mb-8 text-gray-600">Having trouble with the booking system? Use the form below to get in touch:</p>
+            <form class="max-w-lg mx-auto" name="contact" netlify>
+                <div class="mb-6">
+                    <label for="name" class="block text-text mb-2">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-text mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
+                </div>
+                <div class="mb-6">
+                    <label for="phone" class="block text-text mb-2">Phone (optional)</label>
+                    <input type="text" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
+                </div>
+                <div class="mb-6">
+                    <label for="problem" class="block text-text mb-2">Your Biggest Problem?</label>
+                    <textarea id="problem" name="problem" rows="3" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                </div>
+                <div class="mb-6">
+                    <label for="contact-preference" class="block text-text mb-2">How do you want to be contacted?</label>
+                    <select id="contact-preference" name="contact-preference" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
+                        <option value="email">Email</option>
+                        <option value="text">Text</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-text mb-2">Is there something else?</label>
+                    <textarea id="message" name="message" rows="5" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-accent text-white px-6 py-3 rounded-full hover:bg-secondary transition duration-300">Send Message</button>
+            </form>
+        </div>
+
+        <script>
+            window.SavvyCal = window.SavvyCal || function () {
+                (SavvyCal.q = SavvyCal.q || []).push(arguments)
+            };
+        </script>
+        <script async src="https://embed.savvycal.com/v1/embed.js" onerror="showFallbackForm()"></script>
+        <script>
+            let savvyCalLoaded = false;
+
+            function showFallbackForm() {
+                console.log('SavvyCal failed to load, showing fallback form');
+                document
+                    .getElementById('fallback-form')
+                    .style
+                    .display = 'block';
+            }
+
+            // Check if SavvyCal loaded successfully after a timeout
+            setTimeout(function () {
+                const bookingPage = document.getElementById('booking-page');
+                // Check if SavvyCal has injected content (it should have child elements)
+                if (!bookingPage.hasChildNodes() || bookingPage.children.length === 0) {
+                    showFallbackForm();
+                }
+            }, 5000); // Wait 5 seconds for SavvyCal to load
+
+            try {
+                SavvyCal('init');
+                SavvyCal('inline', {
+                    link: 'craigsturgis/request-intro',
+                    selector: '#booking-page'
+                });
+                savvyCalLoaded = true;
+            } catch (error) {
+                console.error('Error initializing SavvyCal:', error);
+                showFallbackForm();
+            }
+        </script>
     </div>
 </section>
